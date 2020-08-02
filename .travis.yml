@@ -2,5 +2,10 @@ language: node_js
 node_js:
  - "node"
 
+dist: xenial
+services:
+  - xvfb
+
 script:
- - node_modules/.bin/wdio wdio.conf.js --spec ./test/specs/harmik.js
+ - xvfb-run make test
+ - node_modules/.bin/wdio wdio.conf.js --spec ./test/specs/login.js

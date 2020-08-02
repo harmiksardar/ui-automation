@@ -15,8 +15,9 @@ describe('The internet', function () {
   it('should verify footer in view', function () {
     browser.url('https://the-internet.herokuapp.com/');
 
-    let footerInView = $('#page-footer').isDisplayedInViewport();
-    console.log(footerInView);
+    let footerInView = $('#page-footer');
+    footerInView.scrollIntoView();
+    console.log(footerInView.isDisplayedInViewport());
 
   });
 
@@ -28,6 +29,7 @@ describe('The internet', function () {
     $('#login button').click;
     let userLoggedIn = $('#flash-messages').isDisplayed();
     console.log(userLoggedIn);
+    browser.saveScreenshot('/Users/harmik.sardar/workspace/ui-automation/screenshot.png');
 
   });
 });

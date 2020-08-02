@@ -7,11 +7,8 @@ class LoginPage extends Page {
   get submitButton () { return $('#login button') }
   get flash () { return $('#flash') }
   //define or iverwrite page methods
-  open() {
-       super.open('login')
-   }
-
-   submit() {
+  //open() { super.open('login') }
+  submit() {
        this.submitButton.click()
    }
 }
