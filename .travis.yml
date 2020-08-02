@@ -11,4 +11,4 @@ services:
 
 script:
  - xvfb-run make test
- - node_modules/.bin/wdio wdio.conf.js --spec ./test/specs/login.js
+ - node_modules/.bin/wdio wdio.conf.js
