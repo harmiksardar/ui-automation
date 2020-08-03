@@ -13,7 +13,7 @@ describe('The internet', function () {
 
   })
 
-  it('should verify check-box one is clicked', function () {
+  it('should verify check-box selection', function () {
     browser.url('https://the-internet.herokuapp.com/checkboxes')
 
     InternetPage.firstCheckbox.click()
