@@ -27,9 +27,6 @@ describe('The internet', function () {
     $('#username').setValue('tomsmith');
     $('#password').setValue('SuperSecretPassword!');
     $('#login button').click;
-    let userLoggedIn = $('#flash-messages').isDisplayed();
-    console.log(userLoggedIn);
-    browser.saveScreenshot('/Users/harmik.sardar/workspace/ui-automation/screenshot.png');
-
+    $('#flash-messages').toHaveTextContaining('Your username is invalid!')
   });
 });
