@@ -28,6 +28,7 @@ describe('The internet', function () {
     $('#password').setValue('SuperSecretPassword!');
     $('#login button').click;
     let boo = $('#flash');
+    expect(boo).toHaveTextContaining('You logged into a secure area!')
     console.log(boo);
   });
 });
