@@ -1,33 +1,26 @@
 //import assert from 'assert';
 //import { expect } from 'chai';
-var assert = require('assert');
+var assert = require('assert')
+const InternetPage = require('../pageobjects/login.page')
 
 describe('The internet', function () {
 
   it('should verify header in view', function () {
-    browser.url('https://the-internet.herokuapp.com/');
+    browser.url('https://the-internet.herokuapp.com/')
 
-    let headerInView = $('.heading').isDisplayedInViewport();
+    let headerInView = $('.heading').isDisplayedInViewport()
     console.log(headerInView);
 
-  });
+  })
 
-  it('should verify footer in view', function () {
-    browser.url('https://the-internet.herokuapp.com/');
+  it('should verify check-box one is clicked', function () {
+    browser.url('https://the-internet.herokuapp.com/checkboxes')
 
-    let footerInView = $('#page-footer');
-    footerInView.scrollIntoView();
-    console.log(footerInView.isDisplayedInViewport());
+    InternetPage.firstCheckbox.click()
+    expect(InternetPage.firstCheckbox).toBeSelected()
 
-  });
+    InternetPage.lastCheckbox.click()
+    expect(InternetPage.lastCheckbox).not.toBeSelected()
 
-  it('should verify successful user login', function () {
-    browser.url('https://the-internet.herokuapp.com/login');
-
-    $('#username').setValue('tomsmith');
-    $('#password').setValue('SuperSecretPassword!');
-    $('#login button').click;
-
-    console.log($('#flash'));
-  });
-});
+  })
+})

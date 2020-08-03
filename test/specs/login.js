@@ -1,21 +1,21 @@
-const LoginPage = require('../pageobjects/login.page')
+const InternetPage = require('../pageobjects/login.page')
 
   describe('Authentication via login form', () => {
     it('should deny access with incorrect credentials', function () {
-        LoginPage.open()
-        LoginPage.username.setValue('foo')
-        LoginPage.password.setValue('bar')
-        LoginPage.submit()
+        InternetPage.open()
+        InternetPage.username.setValue('foo')
+        InternetPage.password.setValue('bar')
+        InternetPage.submit()
 
-        expect(LoginPage.flash).toHaveTextContaining('Your username is invalid!')
+        expect(InternetPage.flash).toHaveTextContaining('Your username is invalid!')
       })
 
     it('should allow access with correct creds', () => {
-        LoginPage.open()
-        LoginPage.username.setValue('tomsmith')
-        LoginPage.password.setValue('SuperSecretPassword!')
-        LoginPage.submit()
+        InternetPage.open()
+        InternetPage.username.setValue('tomsmith')
+        InternetPage.password.setValue('SuperSecretPassword!')
+        InternetPage.submit()
 
-        expect(LoginPage.flash).toHaveTextContaining('You logged into a secure area!')
+        expect(InternetPage.flash).toHaveTextContaining('You logged into a secure area!')
       })
 })
