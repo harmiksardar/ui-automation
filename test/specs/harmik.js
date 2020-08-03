@@ -27,6 +27,7 @@ describe('The internet', function () {
     $('#username').setValue('tomsmith');
     $('#password').setValue('SuperSecretPassword!');
     $('#login button').click;
-    $('#flash-messages').toHaveTextContaining('Your username is invalid!')
+    let loginMessage = $('#flash-messages');
+    expect(loginMessage).toHaveTextContaining('Your username is invalid!');
   });
 });
