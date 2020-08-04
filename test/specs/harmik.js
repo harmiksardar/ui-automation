@@ -23,4 +23,14 @@ describe('The internet', function () {
     expect(InternetPage.lastCheckbox).not.toBeSelected()
 
   })
+
+  it('should verify adding and deleting of elements work', function () {
+    browser.url('https://the-internet.herokuapp.com/add_remove_elements/')
+
+    InternetPage.addElement.click()
+    expect(InternetPage.deleteElement).toExist()
+    InternetPage.deleteElement.click()
+    expect(InternetPage.deleteElement).not.toExist()
+
+  })
 })
