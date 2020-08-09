@@ -7,7 +7,7 @@ addons:
 
 dist: xenial
 services:
-  - xvfb-run -a make test
+  - xvfb-run -a
 
 script:
  - xvfb-run make test
