@@ -7,7 +7,6 @@ describe('The internet', function () {
 
   it('should verify header in view', function () {
     browser.url('https://the-internet.herokuapp.com/')
-
     let headerInView = $('.heading').isDisplayedInViewport()
     console.log(headerInView);
 
@@ -29,6 +28,7 @@ describe('The internet', function () {
 
     InternetPage.addElement.click()
     expect(InternetPage.deleteElement).toExist()
+
     InternetPage.deleteElement.click()
     expect(InternetPage.deleteElement).not.toExist()
 
