@@ -9,7 +9,7 @@ describe('my first visual test', function () {
     const pageTitle = browser.getTitle();
 
     console.log(`Title of page is ${pageTitle}`)
-
+/*
     try {
       const windowSize = browser.getWindowSize();
 
@@ -25,6 +25,6 @@ describe('my first visual test', function () {
     } finally {
       await eyes.abortIfNotClosed();
     }
-
+*//
   })
 });
