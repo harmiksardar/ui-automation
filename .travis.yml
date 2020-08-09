@@ -10,5 +10,5 @@ services:
   - xvfb
 
 script:
- - xvfb-run make test
+ - xvfb-run -a make test
  - node_modules/.bin/wdio wdio.conf.js
