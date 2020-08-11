@@ -17,8 +17,6 @@ class InternetPage extends Page {
 
   get addElement () { return $('#content button') }
   get deleteElement () { return $("#elements button:nth-child(1)") }
-
-  get iFrameBody () { return $('#tinymce') }
   
 }
 module.exports = new InternetPage();

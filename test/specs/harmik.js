@@ -1,7 +1,7 @@
 //import assert from 'assert';
 //import { expect } from 'chai';
 var assert = require('assert')
-const InternetPage = require('../pageobjects/login.page')
+const InternetPage = require('../pageobjects/login.page') 
 
 describe('The internet', function () {
 
