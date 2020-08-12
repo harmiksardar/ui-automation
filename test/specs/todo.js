@@ -1,4 +1,4 @@
-describe('Tesing the ToDo Application', () => {
+describe('Testing ToDo Application', () => {
   it('should be able to complete ToDos', () => {
     browser.url('http://todomvc.com/examples/vue/')
 
