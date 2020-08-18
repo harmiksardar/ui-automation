@@ -1,7 +1,7 @@
 //import assert from 'assert';
 //import { expect } from 'chai';
 var assert = require('assert')
-const InternetPage = require('../pageobjects/login.page') 
+const InternetPage = require('../pageobjects/login.page')
 
 describe('The internet', function () {
 
@@ -32,5 +32,11 @@ describe('The internet', function () {
     InternetPage.deleteElement.click()
     expect(InternetPage.deleteElement).not.toExist()
 
+  })
+
+  it('should check the entry modal is displayed', function () {
+    browser.url('https://the-internet.herokuapp.com/entry_ad')
+    expect(InternetPage.annoyingModal).toExist()
+    
   })
 })
