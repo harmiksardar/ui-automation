@@ -4,4 +4,4 @@
 
 # ui-automation
 
-UI automation with WebdriverIO
+UI automation with WebdriverIO 
