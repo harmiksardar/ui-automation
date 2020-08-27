@@ -7,3 +7,5 @@
 UI automation with WebdriverIO
 
 WebdriverIO documentation is excellent (similar to Cypress')
+
+I am liking Cypress more and more...
