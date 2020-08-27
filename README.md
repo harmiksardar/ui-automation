@@ -4,4 +4,6 @@
 
 # ui-automation
 
-UI automation with WebdriverIO 
+UI automation with WebdriverIO
+
+WebdriverIO documentation is excellent (similar to Cypress')
