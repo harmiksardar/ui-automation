@@ -8,5 +8,5 @@ UI automation with WebdriverIO
 
 WebdriverIO documentation is excellent (similar to Cypress')
 
-But I'm liking Cypress more and more...and pairing Cypress with Applitools is painless+joyful!
+But I'm liking Cypress more and more...and pairing Cypress with Applitools is painless+joyful!!
 
