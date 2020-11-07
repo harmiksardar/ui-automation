@@ -8,4 +8,4 @@ WebdriverIO documentation is excellent (similar to Cypress')
 
 But I'm liking Cypress more & more...and pairing Cypress with Applitools is painless + joyful!!
 
-
+OK...
